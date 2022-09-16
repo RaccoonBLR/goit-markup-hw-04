@@ -68,11 +68,6 @@ img {
   color: currentColor;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-cl);
-}
-
 .list {
   list-style: none;
 }
@@ -172,6 +167,11 @@ body {
   padding-bottom: 32px;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-cl);
+}
+
 .header-contacts-list {
   display: flex;
   gap: 50px;
@@ -259,8 +259,13 @@ body {
 }
 
 .benefits-icon-wrap {
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-  padding: 25px 100px;
+
   margin-bottom: 30px;
 
   background-color: var(--benefit-icon-bg);
@@ -447,21 +452,22 @@ body {
   background-color: var(--hero-footer-bg);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .address-row {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   margin-right: 70px;
 }
 
 .footer-logo {
-  display: inline-block;
   margin-bottom: 20px;
 }
 
 .contacts-adress {
-  /*  */
-  display: inline-block;
-  /*  */
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -481,13 +487,13 @@ body {
   color: var(--contact-adress-cl);
 }
 
-.location:hover,
-.location:focus {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
   color: var(--accent-cl);
 }
 
 .socials-row {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -570,7 +576,12 @@ body {
   gap: 30px;
 }
 
-.portfolio-list-item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
